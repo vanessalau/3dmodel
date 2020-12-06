@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<meta charset="UTF-8">
+
+		<script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
+
+		
+		<style>
+			body {
+				padding: 0;
+				margin: 0;
+			}
+		</style>
+	</head>
+	<body>
+
+	    <a-scene>
+				<a-assets>
+					<img id="sky" src="model/sky.jpg">
+					<a-asset-item id="object" src="model/untitled.gltf"></a-asset-item>
+					<a-asset-item id="materal" src="model/Untitled.mtl"></a-asset-item>
+				</a-assets>
+
+				<a-sky src="#sky"></a-sky>
+				
+				<a-entity position ="0 5 0">
+					<a-camera></a-camera>
+				</a-entity>
+
+
+				<a-entity gltf-model="#object" mtl="#material"></a-entity>
+
+
+
+
+	    </a-scene>
+
+	</body>
+</html>
+
